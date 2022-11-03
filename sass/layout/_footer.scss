@@ -1,0 +1,26 @@
+.footer {
+  background: var(--background);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-container {
+  align-items: baseline;
+  display: flex;
+}
+.footer-address-block {
+  flex-grow: 1;
+  margin-right: 70px;
+}
+.footer__text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+  margin-bottom: 20px;
+}
+.footer-list {
+  width: 44px;
+  height: 44px;
+}

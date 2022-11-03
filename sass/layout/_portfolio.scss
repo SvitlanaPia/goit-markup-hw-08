@@ -1,0 +1,25 @@
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.portfolio-list__item {
+  width: 370px;
+}
+.portfolio-list__card {
+  color: inherit;
+  display: block;
+  text-decoration: none;
+  transition: box-shadow var(--transition-dur-and-func);
+
+  &:hover,
+  &:focus,
+  &:active {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+.portfolio-list__img-wrapper {
+  position: relative;
+  overflow: hidden;
+}
