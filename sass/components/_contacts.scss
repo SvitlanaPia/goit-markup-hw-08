@@ -13,6 +13,18 @@
     color: var(--accent-color);
   }
 }
+.contacts {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
 .contacts__link {
   @extend %contacts;
   display: flex;

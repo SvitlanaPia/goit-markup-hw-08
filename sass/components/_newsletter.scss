@@ -1,11 +1,15 @@
 .newsletter {
-  display: flex;
-  column-gap: 12px;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    column-gap: 12px;
+  }
 }
 .newsletter__email {
-  width: 358px;
+  width: 100%;
   height: 50px;
+  padding: 0;
   padding-left: 16px;
+  margin-bottom: 20px;
   color: var(--white-color);
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -18,6 +22,19 @@
   &:focus {
     border: 1px solid #2196f3;
     outline: none;
+  }
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+  @media screen and (min-width: 768px) {
+    width: 450px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
   }
 }
 .newsletter__icon {

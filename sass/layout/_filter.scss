@@ -1,3 +1,23 @@
+.portfolio-filter {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 8px;
+
+  @media screen and (max-width: 767px) {
+    max-width: 326px;
+    flex-wrap: wrap;
+    row-gap: 15px;
+    margin-bottom: 40px;
+  }
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
+}
 .portfolio-filter__btn {
   color: inherit;
   background-color: var(--filer-and-team);
@@ -21,24 +41,4 @@
       0px 2px 2px rgba(0, 0, 0, 0.12);
     cursor: pointer;
   }
-}
-.portfolio-list__name {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  margin-bottom: 4px;
-}
-.portfolio-list__text-box {
-  padding: 20px 24px;
-  border: 1px solid #eeeeee;
-  border-top: none;
-}
-.portfolio-filter {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
-}
-.portfolio-filter__item:not(:last-child) {
-  margin-right: 8px;
 }

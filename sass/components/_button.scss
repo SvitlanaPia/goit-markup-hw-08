@@ -26,6 +26,8 @@
   column-gap: 10px;
   width: 200px;
   height: 50px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .modal-form__button {
   @extend %button;

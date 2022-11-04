@@ -1,8 +1,16 @@
 .address {
   font-style: normal;
 }
-.address__item:not(:last-child) {
-  margin-bottom: 9px;
+.address__item {
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
 }
 .address__link {
   color: var(--white-color);

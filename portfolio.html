@@ -69,6 +69,63 @@
             >
           </li>
         </ul>
+        <button type="button" class="mobile-menu-btn" data-menu-open>
+          <svg class="mobile-menu-btn__icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu__container">
+          <button class="mobile-menu__close-btn" data-menu-close>
+            <svg class="mobile-menu__close-icon" width="40" height="40">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="lists mobile-menu__list">
+            <li class="mobile-menu__item">
+              <a href="./index.html" class="mobile-menu__link">Студія</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="./portfolio.html" class="mobile-menu__link">Портфоліо</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="#" class="mobile-menu__link">Контакти</a>
+            </li>
+          </ul>
+          <ul class="lists mobile-menu__contact">
+            <li class="mobile-menu__contact-phone">
+              <a
+                href="tel:+380961111111"
+                class="mobile-menu__contact-phone-link"
+                >+38 096 111 11 11</a
+              >
+            </li>
+            <li>
+              <a
+                href="mailto:info@devstudio.com"
+                class="mobile-menu__contact-email"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="lists mobile-menu__social-networks">
+            <li class="mobile-menu__social-networks-item">
+              <a href="#" class="mobile-menu__social-networks-link"
+                >Instagram</a
+              >
+            </li>
+            <li class="mobile-menu__social-networks-item">
+              <a href="#" class="mobile-menu__social-networks-link">Twitter</a>
+            </li>
+            <li class="mobile-menu__social-networks-item">
+              <a href="#" class="mobile-menu__social-networks-link">Facebook</a>
+            </li>
+            <li class="mobile-menu__social-networks-item">
+              <a href="#" class="mobile-menu__social-networks-link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -104,12 +161,30 @@
             <li class="portfolio-list__item">
               <a class="portfolio-list__card" href="#">
                 <div class="portfolio-list__img-wrapper">
-                  <img
-                    src="./images/web.jpg"
-                    alt="Веб-сайт"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/web-mobile.jpg    1x,
+                        ./images/web-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/web-tablet.jpg    1x,
+                        ./images/web-tablet@2x.jpg 2x
+                      "
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/web-desktop.jpg    1x,
+                        ./images/web-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img src="./images/web-mobile.jpg" alt="Веб-сайт" />
+                  </picture>
                   <p class="portfolio-list__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -125,12 +200,33 @@
             <li class="portfolio-list__item">
               <a class="portfolio-list__card" href="#">
                 <div class="portfolio-list__img-wrapper">
-                  <img
-                    src="./images/design.jpg"
-                    alt="Постер New Orlean vs Golden Star"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/design-mobile.jpg    1x,
+                        ./images/design-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/design-tablet.jpg    1x,
+                        ./images/design-tablet@2x.jpg 2x
+                      "
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/design-desktop.jpg    1x,
+                        ./images/design-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      src="./images/design-mobile.jpg"
+                      alt="Постер New Orlean vs Golden Star"
+                    />
+                  </picture>
                   <p class="portfolio-list__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -148,12 +244,30 @@
             <li class="portfolio-list__item">
               <a class="portfolio-list__card" href="#">
                 <div class="portfolio-list__img-wrapper">
-                  <img
-                    src="./images/app.jpg"
-                    alt="Ресторан Seafood"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/app-mobile.jpg    1x,
+                        ./images/app-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/app-tablet.jpg    1x,
+                        ./images/app-tablet@2x.jpg 2x
+                      "
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/app-desktop.jpg    1x,
+                        ./images/app-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img src="./images/app-mobile.jpg" alt="Ресторан Seafood" />
+                  </picture>
                   <p class="portfolio-list__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -169,12 +283,30 @@
             <li class="portfolio-list__item">
               <a class="portfolio-list__card" href="#">
                 <div class="portfolio-list__img-wrapper">
-                  <img
-                    src="./images/marketing.jpg"
-                    alt="Навушники"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/marketing-mobile.jpg    1x,
+                        ./images/marketing-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/marketing-tablet.jpg    1x,
+                        ./images/marketing-tablet@2x.jpg 2x
+                      "
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/marketing-desktop.jpg    1x,
+                        ./images/marketing-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img src="./images/marketing-mobile.jpg" alt="Навушники" />
+                  </picture>
                   <p class="portfolio-list__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -190,12 +322,30 @@
             <li class="portfolio-list__item">
               <a class="portfolio-list__card" href="#">
                 <div class="portfolio-list__img-wrapper">
-                  <img
-                    src="./images/boxes.jpg"
-                    alt="Boxes"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/boxes-mobile.jpg    1x,
+                        ./images/boxes-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/boxes-tablet.jpg    1x,
+                        ./images/boxes-tablet@2x.jpg 2x
+                      "
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/boxes-desktop.jpg    1x,
+                        ./images/boxes-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img src="./images/boxes-mobile.jpg" alt="Проєкт Boxes" />
+                  </picture>
                   <p class="portfolio-list__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -211,12 +361,30 @@
             <li class="portfolio-list__item">
               <a class="portfolio-list__card" href="#">
                 <div class="portfolio-list__img-wrapper">
-                  <img
-                    src="./images/web-site.jpg"
-                    alt="Веб-сайт"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/web-site-mobile.jpg    1x,
+                        ./images/web-site-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/web-site-tablet.jpg    1x,
+                        ./images/web-site-tablet@2x.jpg 2x
+                      "
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/web-site-desktop.jpg    1x,
+                        ./images/web-site-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img src="./images/web-site-mobile.jpg" alt="Веб-сайт" />
+                  </picture>
                   <p class="portfolio-list__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -234,12 +402,33 @@
             <li class="portfolio-list__item">
               <a class="portfolio-list__card" href="#">
                 <div class="portfolio-list__img-wrapper">
-                  <img
-                    src="./images/design-limited.jpg"
-                    alt="Видання Limited Edition"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/design-limited-mobile.jpg    1x,
+                        ./images/design-limited-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/design-limited-tablet.jpg    1x,
+                        ./images/design-limited-tablet@2x.jpg 2x
+                      "
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/design-limited-desktop.jpg    1x,
+                        ./images/design-limited-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      src="./images/design-limited-mobile.jpg"
+                      alt="Видання Limited Edition"
+                    />
+                  </picture>
                   <p class="portfolio-list__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -255,12 +444,33 @@
             <li class="portfolio-list__item">
               <a class="portfolio-list__card" href="#">
                 <div class="portfolio-list__img-wrapper">
-                  <img
-                    src="./images/marketing-lab.jpg"
-                    alt="Проєкт LAB"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/marketing-lab-mobile.jpg    1x,
+                        ./images/marketing-lab-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/marketing-lab-tablet.jpg    1x,
+                        ./images/marketing-lab-tablet@2x.jpg 2x
+                      "
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/marketing-lab-desktop.jpg    1x,
+                        ./images/marketing-lab-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      src="./images/marketing-lab-mobile.jpg"
+                      alt="Проєкт LAB"
+                    />
+                  </picture>
                   <p class="portfolio-list__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -276,12 +486,33 @@
             <li class="portfolio-list__item">
               <a class="portfolio-list__card" href="#">
                 <div class="portfolio-list__img-wrapper">
-                  <img
-                    src="./images/app-business.jpg"
-                    alt="Додаток Growing Business"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/app-business-mobile.jpg    1x,
+                        ./images/app-business-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/app-business-tablet.jpg    1x,
+                        ./images/app-business-tablet@2x.jpg 2x
+                      "
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/app-business-desktop.jpg    1x,
+                        ./images/app-business-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      src="./images/app-business-mobile.jpg"
+                      alt="Додаток Growing Business"
+                    />
+                  </picture>
                   <p class="portfolio-list__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -300,76 +531,82 @@
     </main>
     <footer class="footer">
       <div class="container footer-container">
-        <div class="footer-address-block">
-          <a href="/" class="logo logo-footer"
-            ><span class="logo__web">Web</span
-            ><span class="logo__studio-footer">Studio</span></a
-          >
-          <address class="address">
-            <ul class="lists">
-              <li class="address__item">
+        <div class="footer-address-and-social-networks">
+          <div class="footer-address-block">
+            <a href="/" class="logo logo-footer"
+              ><span class="logo__web">Web</span
+              ><span class="logo__studio-footer">Studio</span></a
+            >
+            <address class="address">
+              <ul class="lists">
+                <li class="address__item">
+                  <a
+                    href="https://goo.gl/maps/oxNiUU3evB4ncJMF8"
+                    class="address__link address__contacts"
+                    >м. Київ, пр-т Лесі Українки, 26</a
+                  >
+                </li>
+                <li class="address__item">
+                  <a href="mailto:info@devstudio.com" class="address__contacts"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="address__item">
+                  <a href="tel:+380961111111" class="address__contacts"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer-social-networks">
+            <p class="footer__text">приєднуйтесь</p>
+            <ul class="lists social-networks">
+              <li class="footer-list">
                 <a
-                  href="https://goo.gl/maps/oxNiUU3evB4ncJMF8"
-                  class="address__link address__contacts"
-                  >м. Київ, пр-т Лесі Українки, 26</a
-                >
+                  class="social-networks__links footer-list__social-networks"
+                  href="#"
+                  ><svg
+                    class="social-networks__icon"
+                    width="20px"
+                    height="20px"
+                  >
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="address__item">
-                <a href="mailto:info@devstudio.com" class="address__contacts"
-                  >info@devstudio.com</a
+              <li class="footer-list">
+                <a
+                  class="social-networks__links footer-list__social-networks"
+                  href="#"
                 >
+                  <svg class="social-networks__icon" width="20px" height="20px">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="address__item">
-                <a href="tel:+380961111111" class="address__contacts"
-                  >+38 096 111 11 11</a
+              <li class="footer-list">
+                <a
+                  class="social-networks__links footer-list__social-networks"
+                  href="#"
                 >
+                  <svg class="social-networks__icon" width="20px" height="20px">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-list">
+                <a
+                  class="social-networks__links footer-list__social-networks"
+                  href="#"
+                >
+                  <svg class="social-networks__icon" width="20px" height="20px">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="footer-social-networks">
-          <p class="footer__text">приєднуйтесь</p>
-          <ul class="lists social-networks">
-            <li class="footer-list">
-              <a
-                class="social-networks__links footer-list__social-networks"
-                href="#"
-                ><svg class="social-networks__icon" width="20px" height="20px">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-list">
-              <a
-                class="social-networks__links footer-list__social-networks"
-                href="#"
-              >
-                <svg class="social-networks__icon" width="20px" height="20px">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-list">
-              <a
-                class="social-networks__links footer-list__social-networks"
-                href="#"
-              >
-                <svg class="social-networks__icon" width="20px" height="20px">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-list">
-              <a
-                class="social-networks__links footer-list__social-networks"
-                href="#"
-              >
-                <svg class="social-networks__icon" width="20px" height="20px">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
         <div class="footer-newsletter">
           <p class="footer__text">Підпишіться на розсилку</p>
@@ -392,5 +629,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

@@ -69,6 +69,73 @@
             >
           </li>
         </ul>
+        <button type="button" class="mobile-menu-btn" data-menu-open>
+          <svg class="mobile-menu-btn__icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+      <div>
+        <div class="mobile-menu" data-menu>
+          <div class="container mobile-menu__container">
+            <button class="mobile-menu__close-btn" data-menu-close>
+              <svg class="mobile-menu__close-icon" width="40" height="40">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+            <ul class="lists mobile-menu__list">
+              <li class="mobile-menu__item">
+                <a href="./index.html" class="mobile-menu__link">Студія</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a href="./portfolio.html" class="mobile-menu__link"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="mobile-menu__item">
+                <a href="#" class="mobile-menu__link">Контакти</a>
+              </li>
+            </ul>
+            <ul class="lists mobile-menu__contact">
+              <li class="mobile-menu__contact-phone">
+                <a
+                  href="tel:+380961111111"
+                  class="mobile-menu__contact-phone-link"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+              <li>
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="mobile-menu__contact-email"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="lists mobile-menu__social-networks">
+              <li class="mobile-menu__social-networks-item">
+                <a href="#" class="mobile-menu__social-networks-link"
+                  >Instagram</a
+                >
+              </li>
+              <li class="mobile-menu__social-networks-item">
+                <a href="#" class="mobile-menu__social-networks-link"
+                  >Twitter</a
+                >
+              </li>
+              <li class="mobile-menu__social-networks-item">
+                <a href="#" class="mobile-menu__social-networks-link"
+                  >Facebook</a
+                >
+              </li>
+              <li class="mobile-menu__social-networks-item">
+                <a href="#" class="mobile-menu__social-networks-link"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -140,30 +207,45 @@
           <h2 class="section__title">Чим ми займаємося</h2>
           <ul class="lists service-list">
             <li class="service-list__item">
-              <img
-                src="./images/laptop.jpg"
-                alt="Десктопні додатки"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="./images/laptop.jpg 1x, ./images/laptop@2x.jpg 2x"
+                />
+                <img
+                  src="./images/laptop.jpg"
+                  alt="Десктопні додатки"
+                  width="370"
+                  height="294"
+                />
+              </picture>
               <p class="service-list__background-text">Десктопні додатки</p>
             </li>
             <li class="service-list__item">
-              <img
-                src="./images/mobile.jpg"
-                alt="Мобільні додатки"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="./images/mobile.jpg 1x, ./images/mobile@2x.jpg 2x"
+                />
+                <img
+                  src="./images/mobile.jpg"
+                  alt="Мобільні додатки"
+                  width="370"
+                  height="294"
+                />
+              </picture>
               <p class="service-list__background-text">Мобільні додатки</p>
             </li>
             <li class="service-list__item">
-              <img
-                src="./images/tablet.jpg"
-                alt="Дизайнерські рішення"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="./images/tablet.jpg 1x, ./images/tablet@2x.jpg 2x"
+                />
+                <img
+                  src="./images/tablet.jpg"
+                  alt="Дизайнерські рішення"
+                  width="370"
+                  height="294"
+                />
+              </picture>
               <p class="service-list__background-text">Дизайнерські рішення</p>
             </li>
           </ul>
@@ -174,12 +256,30 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="lists team-list">
             <li class="team-list__item">
-              <img
-                src="./images/igor.jpg"
-                alt="Ігор Дем'яненко"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/igor-mobile.jpg    1x,
+                    ./images/igor-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/igor-tablet.jpg    1x,
+                    ./images/igor-tablet@2x.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./images/igor-desktop.jpg    1x,
+                    ./images/igor-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img src="./images/igor-mobile.jpg" alt="Ігор Дем'яненко" />
+              </picture>
               <div class="team-list__description">
                 <h3 class="team-list__title">Ігор Дем'яненко</h3>
                 <p class="team-list__text">Product Designer</p>
@@ -243,12 +343,30 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img
-                src="./images/olga.jpg"
-                alt="Ольга Рєпіна"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/olga-mobile.jpg    1x,
+                    ./images/olga-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/olga-tablet.jpg    1x,
+                    ./images/olga-tablet@2x.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./images/olga-desktop.jpg    1x,
+                    ./images/olga-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img src="./images/olga-mobile.jpg" alt="Ольга Рєпіна" />
+              </picture>
               <div class="team-list__description">
                 <h3 class="team-list__title">Ольга Рєпіна</h3>
                 <p class="team-list__text">Frontend Developer</p>
@@ -312,12 +430,30 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img
-                src="./images/mykola.jpg"
-                alt="Микола Тарасов"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/mykola-mobile.jpg    1x,
+                    ./images/mykola-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/mykola-tablet.jpg    1x,
+                    ./images/mykola-tablet@2x.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./images/mykola-desktop.jpg    1x,
+                    ./images/mykola-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img src="./images/mykola-mobile.jpg" alt="Микола Тарасов" />
+              </picture>
               <div class="team-list__description">
                 <h3 class="team-list__title">Микола Тарасов</h3>
                 <p class="team-list__text">Marketing</p>
@@ -381,12 +517,30 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img
-                src="./images/mykhailo.jpg"
-                alt="Михайло Єрмаков"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/mykhailo-mobile.jpg    1x,
+                    ./images/mykhailo-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/mykhailo-tablet.jpg    1x,
+                    ./images/mykhailo-tablet@2x.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./images/mykhailo-desktop.jpg    1x,
+                    ./images/mykhailo-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img src="./images/mykhailo-mobile.jpg" alt="Михайло Єрмаков" />
+              </picture>
               <div class="team-list__description">
                 <h3 class="team-list__title">Михайло Єрмаков</h3>
                 <p class="team-list__text">UI Designer</p>
@@ -504,76 +658,82 @@
     </main>
     <footer class="footer">
       <div class="container footer-container">
-        <div class="footer-address-block">
-          <a href="/" class="logo logo-footer"
-            ><span class="logo__web">Web</span
-            ><span class="logo__studio-footer">Studio</span></a
-          >
-          <address class="address">
-            <ul class="lists">
-              <li class="address__item">
+        <div class="footer-address-and-social-networks">
+          <div class="footer-address-block">
+            <a href="/" class="logo logo-footer"
+              ><span class="logo__web">Web</span
+              ><span class="logo__studio-footer">Studio</span></a
+            >
+            <address class="address">
+              <ul class="lists">
+                <li class="address__item">
+                  <a
+                    href="https://goo.gl/maps/oxNiUU3evB4ncJMF8"
+                    class="address__link address__contacts"
+                    >м. Київ, пр-т Лесі Українки, 26</a
+                  >
+                </li>
+                <li class="address__item">
+                  <a href="mailto:info@devstudio.com" class="address__contacts"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="address__item">
+                  <a href="tel:+380961111111" class="address__contacts"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer-social-networks">
+            <p class="footer__text">приєднуйтесь</p>
+            <ul class="lists social-networks">
+              <li class="footer-list">
                 <a
-                  href="https://goo.gl/maps/oxNiUU3evB4ncJMF8"
-                  class="address__link address__contacts"
-                  >м. Київ, пр-т Лесі Українки, 26</a
-                >
+                  class="social-networks__links footer-list__social-networks"
+                  href="#"
+                  ><svg
+                    class="social-networks__icon"
+                    width="20px"
+                    height="20px"
+                  >
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="address__item">
-                <a href="mailto:info@devstudio.com" class="address__contacts"
-                  >info@devstudio.com</a
+              <li class="footer-list">
+                <a
+                  class="social-networks__links footer-list__social-networks"
+                  href="#"
                 >
+                  <svg class="social-networks__icon" width="20px" height="20px">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="address__item">
-                <a href="tel:+380961111111" class="address__contacts"
-                  >+38 096 111 11 11</a
+              <li class="footer-list">
+                <a
+                  class="social-networks__links footer-list__social-networks"
+                  href="#"
                 >
+                  <svg class="social-networks__icon" width="20px" height="20px">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-list">
+                <a
+                  class="social-networks__links footer-list__social-networks"
+                  href="#"
+                >
+                  <svg class="social-networks__icon" width="20px" height="20px">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="footer-social-networks">
-          <p class="footer__text">приєднуйтесь</p>
-          <ul class="lists social-networks">
-            <li class="footer-list">
-              <a
-                class="social-networks__links footer-list__social-networks"
-                href="#"
-                ><svg class="social-networks__icon" width="20px" height="20px">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-list">
-              <a
-                class="social-networks__links footer-list__social-networks"
-                href="#"
-              >
-                <svg class="social-networks__icon" width="20px" height="20px">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-list">
-              <a
-                class="social-networks__links footer-list__social-networks"
-                href="#"
-              >
-                <svg class="social-networks__icon" width="20px" height="20px">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-list">
-              <a
-                class="social-networks__links footer-list__social-networks"
-                href="#"
-              >
-                <svg class="social-networks__icon" width="20px" height="20px">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
         <div class="footer-newsletter">
           <p class="footer__text">Підпишіться на розсилку</p>
@@ -682,6 +842,7 @@
         </form>
       </div>
     </div>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
