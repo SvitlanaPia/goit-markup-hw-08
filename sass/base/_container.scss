@@ -1,12 +1,12 @@
 .container {
   padding-left: 15px;
   padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
-    margin-right: auto;
-    margin-left: auto;
   }
 }
 @media screen and (min-width: 768px) {
@@ -25,7 +25,11 @@
   align-items: center;
 }
 .mobile-menu__container {
+  height: 100%;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 40px 48px;
 }
 .footer-container {

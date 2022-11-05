@@ -42,9 +42,6 @@
   visibility: visible;
   pointer-events: auto;
 }
-.mobile-menu__list {
-  margin-bottom: 306px;
-}
 .mobile-menu__item:not(:last-child) {
   margin-bottom: 32px;
 }
@@ -86,6 +83,7 @@
 }
 .mobile-menu__social-networks {
   display: flex;
+  flex-wrap: wrap;
 }
 .mobile-menu__social-networks-item {
   &:not(:last-child) {

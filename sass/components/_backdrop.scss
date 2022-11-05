@@ -14,4 +14,9 @@
     visibility: hidden;
     pointer-events: none;
   }
+
+  @media screen and (max-width: 479px) {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
 }
